@@ -1,0 +1,33 @@
+.picture-place-height{
+  height: 444px;
+  @include media-breakpoint-down(lg) {
+    height: 266px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 210px;
+  }
+}
+.picture-place-height-2{
+  height: 207px;
+  @include media-breakpoint-down(lg) {
+    height: 117px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 210px;
+  }
+}
+.picture-place-height-3{
+  width: 445px;
+  height: 445px;
+  margin-right: 30px;
+  @include media-breakpoint-down(lg) {
+    width: 150px;
+    height: 150px;
+    margin-right: 0px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 165px;
+    height: 165px;
+    margin-right: 0px;
+  }
+}

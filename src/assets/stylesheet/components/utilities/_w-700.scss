@@ -1,0 +1,16 @@
+.w-700 {
+  @include media-breakpoint-up(lg) {
+    min-width: 640px;
+  }
+  @include media-breakpoint-up(xxl) {
+    min-width: 700px;
+  }
+}
+.w-729 {
+  @include media-breakpoint-down(lg) {
+    min-width: 729px;
+  }
+}
+.w-106 {
+  width: 114px;
+}

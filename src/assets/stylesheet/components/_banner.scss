@@ -1,0 +1,9 @@
+.banner {
+  height: calc(100vh - 80px);
+  @include media-breakpoint-down(lg) {
+    height: 582px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 560px;
+  }
+}

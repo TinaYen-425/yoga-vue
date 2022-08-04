@@ -1,0 +1,66 @@
+.teacher-card {
+  background: #fff;
+  border-radius: $border-radius-xl;
+  display: flex;
+  color: $gray;
+  height: 116px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  .teacher-pic{
+    width: 68px;
+    height: 68px;
+    margin-right: 20px;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 570px;
+    margin-left: auto;
+  }
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+    width: 100%;
+    height: 90px;
+    padding-left: 16px;
+    .teacher-pic{
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+  }
+}
+
+.teacher-card-lg {
+  width: 635px;
+  background: #fff;
+  border-radius: $border-radius-xl;
+  display: flex;
+  color: $gray;
+  height: 174px;
+  margin-bottom: 16px;
+  right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .teacher-pic{
+    width: 94px;
+    height: 94px;
+    margin-right: 20px;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 630px;
+    .teacher-pic{
+      margin-right: 23px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    height: 142px;
+    padding-left: 16px;
+    .teacher-pic{
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+    }
+  }
+}

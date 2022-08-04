@@ -1,0 +1,68 @@
+//字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables"; //custom
+@import "./helpers/utilities"; //custom
+@import "~bootstrap/scss/mixins";
+
+// Layout & components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+// @import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+// @import "~bootstrap/scss/spinners";
+// @import "~bootstrap/scss/offcanvas";
+// @import "~bootstrap/scss/placeholders";
+
+// Helpers
+@import "~bootstrap/scss/helpers";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+
+//custom  元件客制
+@import "../stylesheet/components/utilities/custom-btn";
+@import "../stylesheet/components/utilities/navbar-toggler-custom";
+@import "../stylesheet/components/teacher-card";
+@import "../stylesheet/components/product";
+@import "../stylesheet/components/comments-card";
+@import "../stylesheet/components/select-custom";
+@import "../stylesheet/components/course-card";
+
+// utilities客制
+@import "../stylesheet/components/utilities/font-weight";
+@import "../stylesheet//components/utilities/bg-dark-gradient";
+@import "../stylesheet//components/utilities/picture-place-height";
+@import "../stylesheet//components/utilities/w-700";
+@import "../stylesheet//components/utilities/picture-height";
+
+//banner
+@import "../stylesheet/components/banner";
+@import "../stylesheet/components/utilities/bg-image";
+@import "../stylesheet/components/utilities/black-pic"

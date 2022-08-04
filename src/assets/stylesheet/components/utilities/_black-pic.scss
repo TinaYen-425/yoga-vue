@@ -1,0 +1,9 @@
+.black-pic {
+  height: 420px;
+  @include media-breakpoint-down(lg) {
+    height: 252px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 420px;
+  }
+}

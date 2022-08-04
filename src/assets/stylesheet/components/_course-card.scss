@@ -1,0 +1,26 @@
+.course-card {
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  height: 196px;
+  border-radius: 16px 16px 16px 16px;
+  margin-bottom: 30px;  
+  position: relative;
+  color: #FFF;
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover{
+    box-shadow: 2px 2px 15px $secondary;
+    border: 1px solid $primary;
+  }
+  &:active{
+    box-shadow: 2px 2px 15px $secondary;
+    border: 1px solid $primary;
+  }
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 44px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
+}

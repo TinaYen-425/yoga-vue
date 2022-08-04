@@ -1,0 +1,21 @@
+.comments-card {
+  background: #fff;
+  border-radius: 16px 16px 16px 16px;
+  min-width: 350px;
+  height: 116px;
+  padding: 14px 16px 14px 16px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(lg) {
+    min-width: 330px;
+  }
+  @include media-breakpoint-down(md) {
+    min-width: 345px;
+  }
+
+  .comments-pic {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;;
+  }
+}
