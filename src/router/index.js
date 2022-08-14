@@ -5,6 +5,7 @@ import ProductView from '../views/ProductView.vue'
 import PlaceView from '../views/PlaceView.vue'
 import AdminView from '../views/admin/AdminView.vue'
 import AdminProductView from '@/views/admin/ProductView.vue'
+import CurriculumView from '../views/CurriculumView.vue'
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
         path: '/place',
         name: 'place',
         component: PlaceView
+      },
+      {
+        path: '/curriculum',
+        name: 'curriculum',
+        component: CurriculumView
       }
     ]
   },

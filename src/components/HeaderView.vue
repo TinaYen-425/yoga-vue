@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon" style="width: 33px; height: 25px;"></span>
       </button>
       <div class="collapse navbar-collapse pt-lg-0" id="navbarSupportedContent">
-        <div class="container-lg px-0 pt-3">
+        <div class="container-lg px-0 pt-3 pt-lg-0">
           <div class="col-lg-12">
           <div class="row gx-0  align-items-center text-md-center flex-md-row flex-column text-lg-start gy-md-3 gy-2">
             <div class="col">
@@ -36,7 +36,7 @@
                   <router-link class="link-gray px-lg-3 px-4  px-md-0 text-decoration-none fw-lg-light fw-md-normal" to="/place">瑜珈空間</router-link>
                 </li>
                 <li class="">
-                  <a class="link-gray px-lg-3 px-4  px-md-0 text-decoration-none fw-lg-light fw-md-normal" href="#">當月課表</a>
+                  <router-link class="link-gray px-lg-3 px-4  px-md-0 text-decoration-none fw-lg-light fw-md-normal" to="/curriculum">當月課表</router-link>
                 </li>
               </ul>
             </div>

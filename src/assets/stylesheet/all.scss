@@ -32,7 +32,7 @@
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/toasts";
-@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/modal"; 
 // @import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/popover";
 // @import "~bootstrap/scss/carousel";
@@ -54,13 +54,16 @@
 @import "../stylesheet/components/comments-card";
 @import "../stylesheet/components/select-custom";
 @import "../stylesheet/components/course-card";
+@import "../stylesheet/components/modal";
 
 // utilities客制
 @import "../stylesheet/components/utilities/font-weight";
-@import "../stylesheet//components/utilities/bg-dark-gradient";
-@import "../stylesheet//components/utilities/picture-place-height";
-@import "../stylesheet//components/utilities/w-700";
-@import "../stylesheet//components/utilities/picture-height";
+@import "../stylesheet/components/utilities/bg-dark-gradient";
+@import "../stylesheet/components/utilities/picture-place-height";
+@import "../stylesheet/components/utilities/w-700";
+@import "../stylesheet/components/utilities/picture-height";
+@import "../stylesheet/components/utilities/scale-pic";
+@import "../stylesheet/components/utilities/object-fit-cover";
 
 //banner
 @import "../stylesheet/components/banner";

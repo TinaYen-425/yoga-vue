@@ -35,9 +35,15 @@
         <div class="row align-items-md-end flex-md-row flex-column">
             <div class="col-md-4 mb-2 mb-md-0">
                 <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><router-link class="link-light fw-light text-decoration-none" to="/products">課程介紹</router-link></li>
-                    <li class="mb-2"><router-link class="link-light fw-light text-decoration-none" to="/place">瑜珈空間</router-link></li>
-                    <li class=""><a class="link-light fw-light text-decoration-none" href="#">當月課表</a></li>
+                    <li class="mb-2">
+                    <router-link class="link-light fw-light text-decoration-none" to="/products">課程介紹</router-link>
+                    </li>
+                    <li class="mb-2">
+                    <router-link class="link-light fw-light text-decoration-none" to="/place">瑜珈空間</router-link>
+                    </li>
+                    <li class="">
+                    <router-link class="link-light fw-light text-decoration-none" to="/curriculum">當月課表</router-link>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-4 mb-2 mb-md-0 text-md-center text-start">© 2021. All Rights Reserved.</div>

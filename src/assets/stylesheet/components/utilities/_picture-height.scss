@@ -1,10 +1,26 @@
 .pic-height{
   width: 100%;
   height: 341px;
-  @include media-breakpoint-down(lg) {
-    height: 341px;
-  }
   @include media-breakpoint-down(md) {
     height: 218px;
   }
+}
+.pic-height-modal{
+  width: 100%;
+  height: 418px;
+  @include media-breakpoint-down(md) {
+    width: 165px;
+    height: 165px;
+  }
+}
+
+.pic-place-height{
+  width: 100%;
+  height: 350px;
+  @include media-breakpoint-down(lg) {
+   height: 216px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 350px;
+   }
 }

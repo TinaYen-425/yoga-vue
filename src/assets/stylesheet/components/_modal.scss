@@ -1,0 +1,6 @@
+.modal-dialog-cs{
+  max-width: 920px;
+  @include media-breakpoint-down(lg) {
+    max-width: 690px;
+  }
+}
