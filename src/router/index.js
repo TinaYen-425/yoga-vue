@@ -3,10 +3,12 @@ import IndexView from '../views/IndexView.vue'
 import HomeView from '../views/HomeView.vue'
 import ProductView from '../views/ProductView.vue'
 import PlaceView from '../views/PlaceView.vue'
+import CurriculumView from '../views/CurriculumView.vue'
+import LoginView from '@/views/admin/LoginView.vue'
 import AdminView from '../views/admin/AdminView.vue'
 import AdminProductView from '@/views/admin/ProductView.vue'
-import CurriculumView from '../views/CurriculumView.vue'
-
+import AdminCouponView from '@/views/admin/CouponView.vue'
+import AdminOrdersView from '@/views/admin/OrdersView.vue'
 const routes = [
   {
     path: '/',
@@ -36,14 +38,29 @@ const routes = [
     ]
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: LoginView
+  },
+  {
     path: '/admin',
     name: 'admin',
     component: AdminView,
     children: [
       {
-        path: '',
+        path: 'products',
         name: 'AdminProducts',
         component: AdminProductView
+      },
+      {
+        path: 'coupon',
+        name: 'AdminCoupon',
+        component: AdminCouponView
+      },
+      {
+        path: 'orders',
+        name: 'AdminOrders',
+        component: AdminOrdersView
       }
     ]
   }
@@ -51,7 +68,8 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  linkActiveClass: 'active'
 })
 
 export default router

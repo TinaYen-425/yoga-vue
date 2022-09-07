@@ -14,3 +14,12 @@
 .w-106 {
   width: 114px;
 }
+.w-notice{
+  width: 579px;
+  @include media-breakpoint-down(lg) {
+    width: 514px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}

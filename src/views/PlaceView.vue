@@ -113,5 +113,112 @@
         </div>
       </div>
     </div>
+    <div class="bg-third">
+      <div class="container pt-lg-10 pb-lg-14 pt-md-8 pb-md-13 pt-10 pb-12">
+        <h3 class="fs-3 text-primary fw-500 text-center mb-8 mb-lg-8 mb-md-6">
+          課程推薦
+        </h3>
+        <div class="overflow-auto pb-3">
+          <div class="d-flex justify-content-between class-recom-width">
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-beside-wall-1.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">基礎 Basic</p>
+              <p class="mb-0 text-primary">授課老師：Carol Tang</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-with-black-tank-2.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">艾揚格 Iyengar</p>
+              <p class="mb-0 text-primary">授課老師：Kanae</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-beside-wall-1.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">基礎 Basic</p>
+              <p class="mb-0 text-primary">授課老師：Carol Tang</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-with-black-tank-2.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">艾揚格 Iyengar</p>
+              <p class="mb-0 text-primary">授課老師：Kanae</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-beside-wall-1.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">基礎 Basic</p>
+              <p class="mb-0 text-primary">授課老師：Carol Tang</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-with-black-tank-2.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">艾揚格 Iyengar</p>
+              <p class="mb-0 text-primary">授課老師：Kanae</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-beside-wall-1.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">基礎 Basic</p>
+              <p class="mb-0 text-primary">授課老師：Carol Tang</p>
+            </div>
+            <div>
+              <img
+                class="class-recom-card object-fit-cover rounded-4 mb-2"
+                :src="
+                  require('../assets/Images/' +
+                    'woman-doing-yoga-with-black-tank-2.jpeg')
+                "
+                alt=""
+              />
+              <p class="mb-0 text-primary fs-5 fw-500">艾揚格 Iyengar</p>
+              <p class="mb-0 text-primary">授課老師：Kanae</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

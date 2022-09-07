@@ -1,0 +1,21 @@
+.class-recom-card{
+  width: 255px;
+  height: 196px;
+  @include media-breakpoint-down(lg) {
+    width: 210px;
+    height: 161px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 255px;
+    height: 196px;
+  }
+}
+.class-recom-width{
+  width: 2250px;
+  @include media-breakpoint-down(lg) {
+    width: 1890px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 2250px;
+  }
+}
