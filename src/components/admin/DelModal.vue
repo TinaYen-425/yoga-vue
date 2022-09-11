@@ -13,7 +13,7 @@
         <div class="modal-content border-0">
           <div class="modal-header bg-gray text-light">
               <h5 name="" class="modal-title" id="exampleModalLabel">
-                <span>刪除產品</span>
+                <span>刪除<slot>產品</slot></span>
               </h5>
             <button
               type="button"
@@ -23,7 +23,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            確認是否刪除 <span class="text-danger">{{ item.title }}</span> 課程!
+            確認是否刪除 <span class="text-danger">{{ item.title }}</span> 的<slot>課程!</slot>
           </div>
           <div class="modal-footer">
             <button
