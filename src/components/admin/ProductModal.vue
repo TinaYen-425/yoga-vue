@@ -50,7 +50,7 @@
                     @change="uploadFile"
                   />
                 </div>
-                <img class="img-fluid" alt="" />
+                <img class="img-fluid" :src="tempProduct.imageUrl"  alt="" />
               </div>
               <div class="col-sm-8">
                 <div class="mb-3">
@@ -66,7 +66,7 @@
                     <option value="短期體驗">短期體驗</option>
                     <option value="長期體驗">長期體驗</option>
                     <option value="測試">測試</option>
-                    <option value=""> 測試value 空白</option>
+                    <option value="">測試value 空白</option>
                   </select>
                 </div>
 
@@ -87,10 +87,30 @@
                       <option value="高階 Advanced">高階 Advanced</option>
                     </select>
                   </div>
-                  <div class="mb-3">
+                   <div class="mb-3"> 
                     <p class="mb-2">課程選擇</p>
                     <div class="mb-2">
-                      <div v-for="(item, key) in class" :key="item.id" class="ms-4">
+                          <input
+                            type="checkbox"
+                            id="item.name"
+                            :true-value="products"
+                            v-model="tempProduct.classes"
+                            class="me-1"
+                          />
+                          <label for="item.name" class="form-label">{{
+                            products
+                          }}</label>
+                    </div>
+                    <p class="mb-0">點選課程有: {{ tempProduct.classes }}</p>
+                  </div>
+                  <!-- <div class="mb-3">
+                    <p class="mb-2">課程選擇</p>
+                    <div class="mb-2">
+                      <div
+                        v-for="(item, key) in products"
+                        :key="item.id"
+                        class="ms-4"
+                      >
                         <template v-if="item.id">
                           <input
                             type="checkbox"
@@ -100,14 +120,14 @@
                             v-model="tempProduct.classes"
                             class="me-1"
                           />
-                          <label :for="item.name" class="form-label"
-                            >{{ item.name }}</label
-                          >
+                          <label :for="item.name" class="form-label">{{
+                            item.name
+                          }}</label>
                         </template>
                       </div>
                     </div>
                     <p class="mb-0">點選課程有: {{ tempProduct.classes }}</p>
-                  </div>
+                  </div> -->
                   <div class="mb-3">
                     <label for="price" class="form-label">單位</label>
                     <select
@@ -200,7 +220,7 @@
 </template>
 
 <script>
-import modalMixin from '@/mixins/modalMixin'
+import modalMixin from "@/mixins/modalMixin";
 
 export default {
   props: {
@@ -221,45 +241,46 @@ export default {
       modal: {},
       tempProduct: {
         type: {},
-        classes: [],
+        classes: []
       },
-      class: [
-        {
-          id: 1,
-          name: "基礎課程",
-          content: [
-            "入體位法動作解說",
-            "瑜珈基礎動作、順位",
-            "適合任何階段練習者",
-          ],
-        },
-        {
-          id: 2,
-          name: "艾揚格、哈達、寰宇",
-          content: [
-            "刺激身體七個層次為核心",
-            "結合流暢體位法練習、呼吸、觀想",
-            "適合半年以上練習者者",
-          ],
-        },
-        {
-          id: 3,
-          name: "阿斯坦加、陰陽",
-          content: [
-            "充分打開身體每個部位",
-            "顯著提升力量與柔軟度",
-            "適合一年以上練習者",
-          ],
-        },
-      ],
+      products: '基礎課程, 艾揚格、哈達、寰宇, 阿斯坦加、陰陽'
+      // products: [
+      //   { 
+      //     id: 1,
+      //     name: "基礎課程",
+      //     content: [
+      //       "入體位法動作解說",
+      //       "瑜珈基礎動作、順位",
+      //       "適合任何階段練習者",
+      //     ],
+      //   },
+      //   {
+      //     id: 2,
+      //     name: "艾揚格、哈達、寰宇",
+      //     content: [
+      //       "刺激身體七個層次為核心",
+      //       "結合流暢體位法練習、呼吸、觀想",
+      //       "適合半年以上練習者者",
+      //     ],
+      //   },
+      //   {
+      //     id: 3,
+      //     name: "阿斯坦加、陰陽",
+      //     content: [
+      //       "充分打開身體每個部位",
+      //       "顯著提升力量與柔軟度",
+      //       "適合一年以上練習者",
+      //     ],
+      //   },
+      // ],
     };
   },
   methods: {
-    uploadFile () {
+    uploadFile() {
       const uploadFile = this.$refs.fileInput.files[0]; //取得檔案
       //轉成form-data格式才能上傳資訊withAPI
       const formData = new FormData(); //將formData轉換格式，格式再加上file-to-upload的名稱，以及要轉換的File
-      formData.append('file-to-upload', uploadFile)
+      formData.append("file-to-upload", uploadFile);
       const api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/admin/upload`;
       this.$http.post(api, formData).then((res) => {
         if (res.data.success) {
@@ -268,6 +289,6 @@ export default {
       });
     },
   },
-  mixins:[modalMixin]
+  mixins: [modalMixin],
 };
 </script>

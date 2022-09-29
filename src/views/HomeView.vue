@@ -18,12 +18,12 @@
               />的<br class="d-md-block d-none" />聲音。
             </p>
             <div class="d-flex">
-              <button type="button" class="btn btn-third me-2 fs-5">
+              <router-link  to="/ReserveClass" class="btn btn-third me-2 fs-5">
                 立即預約
-              </button>
-              <button type="button" class="btn btn-secondary fs-5">
+              </router-link>
+              <router-link to="/products" class="btn btn-secondary fs-5">
                 課程介紹
-              </button>
+              </router-link>
             </div>
           </div>
         </div>

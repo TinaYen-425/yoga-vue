@@ -1,0 +1,20 @@
+.course-level-card {
+  border-radius: 1rem;
+  border: 3px solid $secondary;
+  background: $secondary;
+  box-shadow: 0 3px 6px #00000029;
+  color: #fff;
+  position: relative;
+  padding: 24px;
+}
+
+@include media-breakpoint-down(lg) {
+  .course-level-width {
+    width: 1110px;
+  }
+}
+@include media-breakpoint-down(md) {
+  .course-level-width {
+    width: auto
+  }
+}

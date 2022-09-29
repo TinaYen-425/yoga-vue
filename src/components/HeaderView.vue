@@ -43,7 +43,7 @@
             <div class="col">
               <ul class="navbar-nav justify-content-md-end justify-content-evenly flex-row">
                 <li class="nav-item w-75 w-md-auto">
-                  <a class="btn btn-outline-primary btn-custom rounded-md-4" href="#">立即預約</a>
+                  <router-link class="btn btn-outline-primary btn-custom rounded-md-4" to="/ReserveClass">立即預約</router-link>
                 </li>
                 <li class="nav-item ps-4 pe-lg-0 d-none d-md-block">
                   <a class="btn btn-outline-primary btn-custom rounded-md-4" href="#">聯絡我們</a>

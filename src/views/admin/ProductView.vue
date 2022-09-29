@@ -94,6 +94,7 @@ export default {
       this.isLoading = true;
       this.$http.get(api).then((res) => {
         if (res.data.success) {
+          console.log(res.data)
           this.pagination = res.data.pagination;
           this.products = res.data.products;
           this.isLoading = false;
@@ -110,10 +111,10 @@ export default {
         api = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/admin/product/${item.id}`;
         httpMethod = "put";
       }
-      if (this.tempProduct.classes == "") {
-        alert("「課程選擇」為必選項目");
-        return;
-      }
+      // if (this.tempProduct.classes == "") {
+      //   alert("「課程選擇」為必選項目");
+      //   return;
+      // }
       const productModalCom = this.$refs.productModal;
       this.$http[httpMethod](api, { data: this.tempProduct }).then((res) => {
         this.pushMsgStatus.msgNotice(res);
